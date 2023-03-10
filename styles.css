@@ -1,0 +1,239 @@
+:root {
+  /* primary colors */
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+
+  /* neutral colors */
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+}
+
+main {
+  background-color: var(--White);
+  padding: 4rem 0.8rem;
+  background-image: url(images/bg-pattern-top-mobile.svg),
+    url(images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: var(--Very-Dark-Magenta);
+  font-size: 2.5rem;
+}
+
+.info {
+  color: var(--Dark-Grayish-Magenta);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 1.16rem;
+  font-weight: 500;
+}
+
+.two p {
+  color: var(--Very-Dark-Magenta);
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+
+.stars {
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  background-color: var(--Light-Grayish-Magenta);
+  font-weight: 700;
+  margin: 1rem;
+  padding: 0.5rem 0;
+}
+
+.stars img {
+  /* height: 1.5rem; */
+  /* width: 1.5rem; */
+  margin-top: 0.5rem;
+  margin-left: 0.1rem;
+}
+
+.three {
+  /* background-color: var(--Very-Dark-Magenta); */
+  color: var(--White);
+  margin: 3rem 1rem;
+  /* display: flex; */
+}
+
+.img-head {
+  display: flex;
+}
+
+.col {
+  display: flex;
+}
+
+.names {
+  background-color: var(--Very-Dark-Magenta);
+  padding: 2rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  /* border: 5px solid black; */
+}
+
+.names img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.name-stack {
+  margin-left: 1rem;
+  line-height: 1.2;
+}
+
+.comment {
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  color: var(--Light-Grayish-Magenta);
+}
+
+.name {
+  font-weight: 700;
+}
+
+.verified {
+  color: var(--Soft-Pink);
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.attribution a {
+  color: hsl(158, 36%, 37%);
+}
+
+#name {
+  color: red;
+}
+
+@media (min-width: 1200px) {
+  body {
+    /* background-image: url(images/bg-pattern-top-desktop.svg); */
+    /* url(images/bg-pattern-bottom-desktop.svg); */
+    /* background-repeat: no-repeat; */
+  }
+
+  main {
+    margin: 0 auto;
+    /* width: 90%; */
+    background-image: url(images/bg-pattern-top-desktop.svg),
+      url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    /* background-size: 32%, 32%; */
+  }
+
+  .container {
+    /* width: 90%; */
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .one {
+    width: 50%;
+    max-width: 30%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    max-width: 80%;
+  }
+
+  .two {
+    width: 50%;
+    /* margin: 0 auto; */
+  }
+
+  .stars {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.7rem;
+    width: 68%;
+    /* margin: 0 auto; */
+  }
+
+  .stars img {
+    height: 1rem;
+    width: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0.9rem;
+  }
+
+  .stars p {
+    margin-left: 2rem;
+    font-size: 1rem;
+  }
+
+  .two .stars:nth-child(2) {
+    /* margin-left: 2rem; */
+    transform: translateX(7.5%);
+  }
+
+  .two .stars:nth-child(3) {
+    /* margin-left: 2rem; */
+    transform: translateX(15%);
+  }
+
+  .three {
+    /* width: 50%; */
+    max-width: 82.5%;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+  }
+
+  .three .names:nth-child(2) {
+    transform: translateY(10%);
+  }
+
+  .three .names:nth-child(3) {
+    transform: translateY(20%);
+  }
+
+  .names {
+    /* padding: 2rem; */
+    margin: 1rem 1rem;
+  }
+
+  .name-stack {
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+
+  .comment {
+    font-size: 1.2rem;
+  }
+}
